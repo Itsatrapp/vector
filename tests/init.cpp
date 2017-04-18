@@ -7,7 +7,6 @@ SCENARIO("default constructor")
 	REQUIRE(vector.size() == 0);
 	REQUIRE(vector.capacity() == 0);
 }
-
 SCENARIO("constructor with params") 
 {
 	vector_t vector(1);
@@ -15,7 +14,6 @@ SCENARIO("constructor with params")
 	REQUIRE(vector.capacity() == 1);
 	REQUIRE(vector[0] == 0);
 }
-
 SCENARIO("copy constructor") 
 {
 	vector_t vector1(1);
@@ -24,7 +22,6 @@ SCENARIO("copy constructor")
 	REQUIRE(vector1.capacity() == vector2.capacity());
 	REQUIRE(vector1[0] == vector2[0]);
 }
-
 SCENARIO("=") 
 {
 	vector_t vector1(1);
@@ -33,7 +30,6 @@ SCENARIO("=")
 	REQUIRE(vector1.capacity() == vector2.capacity());
 	REQUIRE(vector1[0] == vector2[0]);
 }
-
 SCENARIO("push")
 {
 	vector_t vector(1);
@@ -45,7 +41,6 @@ SCENARIO("push")
 	REQUIRE(vector[1] == 2);
 	REQUIRE(vector[2] == 3);
 }
-
 SCENARIO("[]")
 {
 	vector_t vector(2);
